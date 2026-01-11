@@ -2,5 +2,19 @@
 
 * { 
   background: var(--page-bg);
-  color: red;
+  color: var(--text-standard);
+}
+
+
+/* Header */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 90;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid var(--text-standard);
+  padding: 0 40px;
 }

@@ -1,10 +1,11 @@
 :root {
-  --page-bg: black;
+  --page-bg: #0a0a0a;
   
-
-  --text-standard: #f1f1f1;
+  --text-standard: #57f57ae6;
   --text-highlight: #fff;
   
   --brand-primary: green;
   --brand-secondary: red;
+
+
 }

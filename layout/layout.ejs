@@ -10,14 +10,7 @@
   </head>
 
   <body>
-    <header class="site-header">
-      <h1 class="site-title">
-        <a href="<%- url_for('/') %>"><%= config.title %></a>
-      </h1>
-      <% if (config.subtitle) { %>
-        <p class="site-subtitle"><%= config.subtitle %></p>
-      <% } %>
-    </header>
+    <%- partial('_partial/header') %>
 
     <main class="content">
       <%- body %>
