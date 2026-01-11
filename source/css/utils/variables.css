@@ -4,8 +4,8 @@
   --text-standard: #57f57ae6;
   --text-highlight: #fff;
   
-  --brand-primary: green;
-  --brand-secondary: red;
-
-
+  --brand-primary: #57f57ae6;
+  --brand-primary-75: #57f579c7;
+  --brand-primary-50: #57f57986;
+  --brand-primary-25: #57f5794d;
 }
