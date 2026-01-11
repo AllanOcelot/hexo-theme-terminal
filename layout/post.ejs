@@ -1,0 +1,11 @@
+<article class="post">
+  <h2 class="post-title"><%= page.title || 'Untitled' %></h2>
+
+  <p class="post-meta">
+    <small><%= date(page.date, 'YYYY-MM-DD') %></small>
+  </p>
+
+  <div class="post-content">
+    <%- page.content %>
+  </div>
+</article>
