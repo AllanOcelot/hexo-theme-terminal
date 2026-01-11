@@ -1,3 +1,6 @@
+@import "./utils/variables.css";
+
 * { 
-  background: #000;
+  background: var(--page-bg);
+  color: red;
 }

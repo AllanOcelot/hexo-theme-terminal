@@ -1,0 +1,10 @@
+:root {
+  --page-bg: black;
+  
+
+  --text-standard: #f1f1f1;
+  --text-highlight: #fff;
+  
+  --brand-primary: green;
+  --brand-secondary: red;
+}
