@@ -12,6 +12,7 @@ body {
   margin: 10px;
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
   background: var(--page-bg);
   position: relative;
   padding-top: 100px;
@@ -41,7 +42,7 @@ body::after {
   height: calc(100% - 20px);
   inset: 0;
   pointer-events: none;
-  z-index: 999999;
+  z-index: 999;
   transition: opacity 100ms ease;
 
   /* layer bg's for crt effect */
@@ -71,7 +72,6 @@ body::after {
       rgba(0, 0, 255, 0.020) 5px
     );
 
-
   mix-blend-mode: screen;
   transform: translateZ(0);
 
@@ -79,7 +79,6 @@ body::after {
     crt-flicker 1.8s infinite,
     crt-brightness 4s ease-in-out infinite;
 }
-
 
 
 /* Header */
