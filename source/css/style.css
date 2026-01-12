@@ -4,14 +4,22 @@
   box-sizing: border-box;
 }
 
+html {
+  background: #000;
+}
+
 body {
-  margin: 0;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
   background: var(--page-bg);
+  position: relative;
   padding-top: 100px;
   padding: 100px 40px;
+  min-height: 100vh;
   color: var(--brand-primary-75);
-  font-family: "IBM Plex Mono", ui-monospace, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  box-shadow: inset 0 10px 60px rgba(0, 0, 0, 0.7);
 
   a {
     color: var(--brand-primary-75);
@@ -22,8 +30,57 @@ body {
     color: var(--brand-primary);
     transition: color .2s;
   }
-
 }
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 10px !important;
+  left: 10px !important;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  inset: 0;
+  pointer-events: none;
+  z-index: 999999;
+  transition: opacity 100ms ease;
+
+  /* layer bg's for crt effect */
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(0,0,0,0.00) 0%,
+      rgba(0,0,0,0.22) 55%,
+      rgba(0,0,0,0.55) 100%
+    ),
+
+    /* scanlines (LIGHT lines, transparent gaps) */
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.05) 0px,
+      rgba(255,255,255,0.05) 1px,
+      rgba(0,0,0,0.00) 2px,
+      rgba(0,0,0,0.00) 4px
+    ),
+    repeating-linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.020) 0px,
+      rgba(255, 0, 0, 0.020) 1px,
+      rgba(0, 255, 0, 0.016) 2px,
+      rgba(0, 255, 0, 0.016) 3px,
+      rgba(0, 0, 255, 0.020) 4px,
+      rgba(0, 0, 255, 0.020) 5px
+    );
+
+
+  mix-blend-mode: screen;
+  transform: translateZ(0);
+
+  animation:
+    crt-flicker 1.8s infinite,
+    crt-brightness 4s ease-in-out infinite;
+}
+
+
 
 /* Header */
 .site-header {
@@ -35,6 +92,7 @@ body {
   width: 100%;
   height: 80px;
   border-bottom: 1px solid var(--brand-primary-25);
+  background: var(--page-bg);
   padding: 0 40px;
 
   .logo {
@@ -46,4 +104,29 @@ body {
   nav {
     margin: auto 0 auto auto;
   }
+}
+
+
+/* Animations */
+/* CRT effect - irregular flicker */
+@keyframes crt-flicker {
+  0%   { opacity: 0.85; }
+  5%   { opacity: 0.78; }
+  10%  { opacity: 0.90; }
+  15%  { opacity: 0.82; }
+  22%  { opacity: 0.88; }
+  28%  { opacity: 0.76; }
+  35%  { opacity: 0.92; }
+  45%  { opacity: 0.80; }
+  55%  { opacity: 0.89; }
+  65%  { opacity: 0.83; }
+  75%  { opacity: 0.93; }
+  85%  { opacity: 0.79; }
+  100% { opacity: 0.85; }
+}
+
+/* CRT Effect - breathing */
+@keyframes crt-brightness {
+  0%, 100% { filter: brightness(1) contrast(1); }
+  50%      { filter: brightness(1.04) contrast(1.06); }
 }
