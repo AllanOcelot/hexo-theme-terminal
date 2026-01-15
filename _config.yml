@@ -16,5 +16,12 @@
 # Applies a monochrome CRT-style effect to post images.
 # Disable if you use photography-heavy posts.
 # ─────────────────────────────────────────────
+
+# If enabled, the 'fake crt' effect will be applied
+terminal_crt_enabled: true
+
+# Options: 'green' | 'blue' | 'red' | 'grey' | 'amber'
+terminal_color: 'green'
+
 terminal_images:
   enabled: true
