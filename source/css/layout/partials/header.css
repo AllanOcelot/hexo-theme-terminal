@@ -1,0 +1,48 @@
+@import "./utils/variables.css";
+
+/* Header */
+.site-header {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #f1f1f1;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+
+  .wrapper {
+    padding: 0 40px;
+  }
+
+  .logo {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  nav {
+    margin: auto 0 auto auto;
+  }
+
+  &.green {
+    border-bottom-color: var(--brand-primary-green-50);
+    .logo a {
+      color: var(--brand-primary-green);
+    }
+  }
+  &.blue {
+    border-bottom-color: var(--brand-primary-blue-75);
+  }
+  &.red {
+    border-bottom-color: var(--brand-primary-red-75);
+  }
+  &.grey {
+    border-bottom-color: var(--brand-primary-grey-75);
+  }
+  &.amber {
+    border-bottom-color: var(--brand-primary-amber-75);
+  }
+}
