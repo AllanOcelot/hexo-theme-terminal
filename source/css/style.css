@@ -83,16 +83,20 @@ body::after {
 
 /* Header */
 .site-header {
-  position: fixed;
+  position: absolute;
+  display: flex;
   top: 0;
   left: 0;
-  display: flex;
   z-index: 90;
   width: 100%;
   height: 80px;
   border-bottom: 1px solid var(--brand-primary-25);
-  background: var(--page-bg);
-  padding: 0 40px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+
+  .wrapper {
+    padding: 0 40px;
+  }
 
   .logo {
     a {
@@ -105,6 +109,138 @@ body::after {
   }
 }
 
+
+/* Individual Post Styling */
+/* --- Content container --- */
+.post-content {
+  max-width: 100%;
+  margin-inline: auto;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.post-content > * + * {
+  margin-top: 1em;
+}
+
+/* Headings */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  line-height: 1.25;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+}
+
+.post-content h1 { font-size: 2rem; }
+.post-content h2 { font-size: 1.6rem; }
+.post-content h3 { font-size: 1.3rem; }
+
+/* Paragraphs */
+.post-content p {
+  margin: 0 0 2em 0;
+}
+
+/* Links */
+.post-content a {
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.18em;
+}
+
+/* Images */
+.post-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.2em auto;
+}
+.post-content p > img {
+  margin: 1.2em auto;
+}
+
+/* Lists */
+.post-content ul,
+.post-content ol {
+  padding-left: 1.4em;
+}
+
+.post-content li + li {
+  margin-top: 0.35em;
+}
+
+/* Nested lists spacing */
+.post-content li > ul,
+.post-content li > ol {
+  margin-top: 0.5em;
+}
+
+/* Blockquotes */
+.post-content blockquote {
+  margin: 1.2em 0;
+  padding: 0.8em 1em;
+  border-left: 0.3em solid currentColor;
+  opacity: 0.9;
+}
+
+/* Inline code */
+.post-content :not(pre) > code {
+  padding: 0.15em 0.35em;
+  border-radius: 0.25em;
+  font-size: 0.95em;
+}
+
+/* Code blocks */
+.post-content pre {
+  overflow: auto;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.post-content pre code {
+  padding: 0;
+  background: none;
+  font-size: 0.95em;
+}
+
+/* Horizontal rule */
+.post-content hr {
+  border: 0;
+  border-top: 1px solid currentColor;
+  opacity: 0.2;
+  margin: 2em 0;
+}
+
+/* Tables (simple + mobile-friendly) */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+}
+
+.post-content th,
+.post-content td {
+  text-align: left;
+  padding: 0.6em 0.8em;
+  border-bottom: 1px solid rgba(127, 127, 127, 0.25);
+}
+
+/* Small screens: reduce padding a bit */
+@media (max-width: 600px) {
+  .post-content {
+    max-width: 100%;
+  }
+  .post-content pre {
+    padding: 0.8em;
+  }
+}
+
+/* Theme Features */
+.terminal-images .post-content img {
+  filter: grayscale(.5) contrast(1) brightness(.4) sepia(.5) hue-rotate(90deg);
+  box-shadow: 0 0 12px rgba(var(--rgb-brand-primary), 0.35);
+}
 
 /* Animations */
 /* CRT effect - irregular flicker */
@@ -131,10 +267,3 @@ body::after {
 }
 
 
-/* Individual Post Styling */
-
-/* Theme Features */
-.terminal-images .post-content img {
-  filter: grayscale(.5) contrast(1) brightness(.4) sepia(.5) hue-rotate(90deg);
-  box-shadow: 0 0 12px rgba(var(--rgb-brand-primary), 0.35);
-}
