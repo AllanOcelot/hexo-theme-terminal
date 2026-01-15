@@ -35,14 +35,26 @@
   }
   &.blue {
     border-bottom-color: var(--brand-primary-blue-75);
+    .logo a {
+      color: var(--brand-primary-blue);
+    }
   }
   &.red {
     border-bottom-color: var(--brand-primary-red-75);
+    .logo a {
+      color: var(--brand-primary-red);
+    }
   }
   &.grey {
     border-bottom-color: var(--brand-primary-grey-75);
+    .logo a {
+      color: var(--brand-primary-grey);
+    }
   }
   &.amber {
     border-bottom-color: var(--brand-primary-amber-75);
+    .logo a {
+      color: var(--brand-primary-amber);
+    }
   }
 }
