@@ -18,4 +18,3 @@
 # ─────────────────────────────────────────────
 terminal_images:
   enabled: true
-  mode: green
