@@ -129,3 +129,12 @@ body::after {
   0%, 100% { filter: brightness(1) contrast(1); }
   50%      { filter: brightness(1.04) contrast(1.06); }
 }
+
+
+/* Individual Post Styling */
+
+/* Theme Features */
+.terminal-images .post-content img {
+  filter: grayscale(.5) contrast(1) brightness(.4) sepia(.5) hue-rotate(90deg);
+  box-shadow: 0 0 12px rgba(var(--rgb-brand-primary), 0.35);
+}

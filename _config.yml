@@ -1,0 +1,21 @@
+# Thank you for using Terminal, 
+# This is my first Hexo theme, and just a bit of fun - nothing more
+# Please raise issues/make Pr's if you would like to and I'll review when I have time - Allan
+
+# ─────────────────────────────────────────────
+# T E R M I N A L
+# Thank you for using my theme!
+# This is just a simple hobby project, something to tinker with in my down time.
+# If you find issues / want features, let me know on the Repo and I'll resolve when I have free time.
+# - Allan
+# ─────────────────────────────────────────────
+
+
+# ─────────────────────────────────────────────
+# Terminal Images
+# Applies a monochrome CRT-style effect to post images.
+# Disable if you use photography-heavy posts.
+# ─────────────────────────────────────────────
+terminal_images:
+  enabled: true
+  mode: green

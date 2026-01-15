@@ -8,4 +8,7 @@
   --brand-primary-75: #57f579c7;
   --brand-primary-50: #57f57986;
   --brand-primary-25: #57f5794d;
+
+  /* RGB Values for specific theme use */
+  --rgb-brand-primary: rgba(87, 245, 122);
 }
