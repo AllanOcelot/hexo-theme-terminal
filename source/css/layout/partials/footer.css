@@ -1,0 +1,22 @@
+@import "./utils/variables.css";
+
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px;
+    flex: 1 auto;
+    align-items: center;
+    .left {
+      margin: auto auto auto 0;
+    }
+    .right {
+      margin: auto 0 auto auto;
+      font-size: 12px;
+    }
+  }
+}
