@@ -17,7 +17,7 @@ body {
   background: var(--page-bg);
   position: relative;
   padding: 100px 40px 20px 40px;
-  min-height: 100vh;
+  min-height: calc(100vh - 20px);
   color: var(--brand-primary-green-75);
   font-family: "IBM Plex Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
