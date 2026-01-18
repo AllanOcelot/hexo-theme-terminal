@@ -16,6 +16,9 @@
 # If enabled, the 'fake crt' effect will be applied
 terminal_crt_enabled: true
 
+# Show blinking terminal cursor after blog title in header
+terminal_cursor: true
+
 # Options: 'green' | 'blue' | 'red' | 'grey' | 'amber'
 terminal_color: 'green'
 

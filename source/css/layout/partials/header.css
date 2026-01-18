@@ -21,8 +21,19 @@
   }
 
   .logo {
+    h1 {
+      display: inline-block;
+    }
     a {
       text-decoration: none;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 12px;
+      height: 32px;
+      background: #f1f1f1;
+      animation: cursor-blink 1.4s steps(1, end) infinite;
     }
   }
 
@@ -35,11 +46,17 @@
     .logo a {
       color: var(--brand-primary-green);
     }
+    .cursor {
+      background: var(--brand-primary-green);
+    }
   }
   &.blue {
     border-bottom-color: var(--brand-primary-blue-75);
     .logo a {
       color: var(--brand-primary-blue);
+    }
+    .cursor {
+      background: var(--brand-primary-blue);
     }
   }
   &.red {
@@ -47,11 +64,17 @@
     .logo a {
       color: var(--brand-primary-red);
     }
+    .cursor {
+      background: var(--brand-primary-red);
+    }
   }
   &.grey {
     border-bottom-color: var(--brand-primary-grey-75);
     .logo a {
       color: var(--brand-primary-grey);
+    }
+    .cursor {
+      background: var(--brand-primary-grey);
     }
   }
   &.amber {
@@ -59,5 +82,14 @@
     .logo a {
       color: var(--brand-primary-amber);
     }
+    .cursor {
+      background: var(--brand-primary-amber);
+    }
   }
+}
+
+/* Animation */
+@keyframes cursor-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
 }

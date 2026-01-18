@@ -4,9 +4,9 @@
       <h1 class="site-title">
         <a href="<%- url_for('/') %>"><%= config.title %></a>
       </h1>
-      <% if (config.subtitle) { %>
-        <p class="site-subtitle"><%= config.subtitle %></p>
-      <% } %>
+      <% if (theme.terminal_color) { %>
+        <span class="cursor"></span>
+      <% } %> 
     </div>
 
     <nav class="site-nav">
