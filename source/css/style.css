@@ -129,5 +129,3 @@ body.crt::after {
   0%, 100% { filter: brightness(1) contrast(1); }
   50%      { filter: brightness(1.04) contrast(1.06); }
 }
-
-

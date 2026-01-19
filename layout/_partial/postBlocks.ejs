@@ -1,0 +1,10 @@
+<div class="postblocks">
+  <ul class="post-list">
+    <% page.posts.each(function(post){ %>
+      <li class="post-list-item">
+        <a href="<%- url_for(post.path) %>"><%= post.title || 'Untitled' %></a>
+        <small class="post-date"><%= date(post.date, 'YYYY-MM-DD') %></small>
+      </li>
+    <% }) %>
+  </ul>
+</div>
