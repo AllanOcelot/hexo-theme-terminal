@@ -1,6 +1,5 @@
 @import "./utils/variables.css";
 
-/* --- Content container --- */
 article.post {
   .post-content {
     max-width: 100%;
@@ -8,11 +7,7 @@ article.post {
     line-height: 1.7;
     overflow-wrap: anywhere;
 
-    /* Headings */
-    h1,
-    h2,
-    h3,
-    h4 {
+    h1,h2, h3, h4 {
       line-height: 1.25;
       margin-top: 1.6em;
       margin-bottom: 0.6em;
@@ -50,47 +45,11 @@ article.post {
       margin-top: 0.35em;
     }
   }
-    /* Colors */
-    &.green {
-      color: var(--brand-primary-green-75);
-      img {
-        border-color: var(--brand-primary-green-75);
-      }
-    }
-    &.blue {
-      color: var(--brand-primary-blue-75);
-      img {
-        border-color: var(--brand-primary-blue-75);
-      }
-    }
-    &.red {
-      color: var(--brand-primary-red-75);
-      img {
-        border-color: var(--brand-primary-red-75);
-      }
-    }
-    &.grey {
-      color: var(--brand-primary-grey-75);
-      img {
-        border-color: var(--brand-primary-grey-75);
-      }
-    }
-    &.amber {
-      color: var(--brand-primary-amber-75);
-      img {
-        border-color: var(--brand-primary-amber-75);
-      }
-    }
-
-
 }
-
-
 
 .post-content > * + * {
   margin-top: 1em;
 }
-
 
 /* Nested lists spacing */
 li > ul,
@@ -98,7 +57,6 @@ li > ol {
   margin-top: 0.5em;
 }
 
-/* Blockquotes */
 blockquote {
   margin: 1.2em 0;
   padding: 0.8em 1em;
@@ -118,13 +76,14 @@ pre {
   overflow: auto;
   padding: 1em;
   border-radius: 0.5em;
+  code {
+    padding: 0;
+    background: none;
+    font-size: 0.95em;
+  }
 }
 
-pre code {
-  padding: 0;
-  background: none;
-  font-size: 0.95em;
-}
+
 
 hr {
   border: 0;

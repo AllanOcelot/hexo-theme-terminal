@@ -41,52 +41,6 @@
   nav {
     margin: auto 0 auto auto;
   }
-
-  &.green {
-    border-bottom-color: var(--brand-primary-green-50);
-    .logo a {
-      color: var(--brand-primary-green);
-    }
-    .cursor {
-      background: var(--brand-primary-green);
-    }
-  }
-  &.blue {
-    border-bottom-color: var(--brand-primary-blue-75);
-    .logo a {
-      color: var(--brand-primary-blue);
-    }
-    .cursor {
-      background: var(--brand-primary-blue);
-    }
-  }
-  &.red {
-    border-bottom-color: var(--brand-primary-red-75);
-    .logo a {
-      color: var(--brand-primary-red);
-    }
-    .cursor {
-      background: var(--brand-primary-red);
-    }
-  }
-  &.grey {
-    border-bottom-color: var(--brand-primary-grey-75);
-    .logo a {
-      color: var(--brand-primary-grey);
-    }
-    .cursor {
-      background: var(--brand-primary-grey);
-    }
-  }
-  &.amber {
-    border-bottom-color: var(--brand-primary-amber-75);
-    .logo a {
-      color: var(--brand-primary-amber);
-    }
-    .cursor {
-      background: var(--brand-primary-amber);
-    }
-  }
 }
 
 /* Animation */

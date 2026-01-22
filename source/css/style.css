@@ -1,7 +1,9 @@
 @import "./utils/variables.css";
 @import "./layout/partials/header.css";
+@import "./layout/partials/pageheader.css";
 @import "./layout/partials/footer.css";
 @import "./posts.css";
+@import "./utils/themes.css";
 
 * {
   box-sizing: border-box;
@@ -36,23 +38,6 @@ body {
     margin: 10px;
     border-radius: 20px;
     box-shadow: inset 0 10px 60px rgba(0, 0, 0, 0.7);
-  }
-
-  /* Colors */
-  &.green {
-    color: var(--brand-primary-green-75);
-  }
-  &.blue {
-    color: var(--brand-primary-blue-75);
-  }
-  &.red {
-    color: var(--brand-primary-red-75);
-  }
-  &.grey {
-    color: var(--brand-primary-grey-75);
-  }
-  &.amber {
-    color: var(--brand-primary-amber-75);
   }
 }
 
@@ -129,3 +114,5 @@ body.crt::after {
   0%, 100% { filter: brightness(1) contrast(1); }
   50%      { filter: brightness(1.04) contrast(1.06); }
 }
+
+
