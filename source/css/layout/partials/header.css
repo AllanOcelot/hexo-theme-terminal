@@ -20,8 +20,10 @@
   }
 
   .logo {
+    display: flex;
     h1 {
       display: inline-block;
+      margin: auto;
     }
     a {
       text-decoration: none;
@@ -29,8 +31,9 @@
 
     .cursor {
       display: inline-block;
+      margin-left: 6px;
       position: relative;
-      top:3px;
+      top: 23px;
       width: 12px;
       height: 32px;
       background: #f1f1f1;
