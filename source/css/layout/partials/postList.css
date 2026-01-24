@@ -1,0 +1,15 @@
+.posts {
+  .postList {
+    list-style: none;
+    padding-left: 0;
+    &.full {
+
+    }
+    &.minimal {
+      li {
+        line-height: 30px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

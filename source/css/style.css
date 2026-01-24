@@ -1,7 +1,7 @@
 @import "./utils/variables.css";
 @import "./layout/partials/header.css";
 @import "./layout/partials/pagehero.css";
-@import "./layout/partials/postsminimal.css";
+@import "./layout/partials/postList.css";
 @import "./layout/partials/footer.css";
 @import "./posts.css";
 

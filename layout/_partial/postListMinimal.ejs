@@ -1,9 +1,9 @@
-<div class="posts minimal">
-  <ul class="post-list">
+<div class="posts">
+  <ul class="postList minimal">
     <% page.posts.each(function(post){ %>
-      <li class="post-list-item">
+      <li>
+        <small class="post-date"><%= date(post.date, 'DD-MM-YYYY') %></small>
         <a href="<%- url_for(post.path) %>"><%= post.title || 'Untitled' %></a>
-        <small class="post-date"><%= date(post.date, 'YYYY-MM-DD') %></small>
       </li>
     <% }) %>
   </ul>
