@@ -7,12 +7,6 @@
 # ─────────────────────────────────────────────
 
 
-# ─────────────────────────────────────────────
-# Terminal Images
-# Applies a monochrome CRT-style effect to post images.
-# Disable if you use photography-heavy posts.
-# ─────────────────────────────────────────────
-
 # If enabled, the 'fake crt' effect will be applied
 terminal_crt_enabled: true
 
@@ -22,5 +16,20 @@ terminal_cursor: true
 # Options: 'green' | 'blue' | 'red' | 'grey' | 'amber'
 terminal_color: 'green'
 
+# Terminal Images simply applies a filter to image, this can be undesirable to blogs that are photo heavy.
+# You can override specific images by using an img tag and the class 'no-filter'
 terminal_images:
   enabled: true
+
+
+# ─────────────────────────────────────────────
+# HOME PAGE OPTIONS
+# ─────────────────────────────────────────────
+home_options:
+  showHero: true
+  heroTitle: 'Welcome To My Blog!'
+  heroSubTitle: 'This is where I post about my life'
+  heroButton: 
+    showButton: true
+    buttonTitle: 'Read More'
+    buttonLink: '/about'
