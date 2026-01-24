@@ -2,7 +2,13 @@
   <h2 class="post-title"><%= page.title || 'Untitled' %></h2>
 
   <p class="post-meta">
-    <small><%= date(page.date, 'YYYY-MM-DD') %></small>
+    <small>
+    <% if (theme.dateFormat === 'EU') { %>
+      <%= date(page.date, 'DD-MM-YYYY') %>
+    <% } else { %>
+      <%= date(page.date, 'YY-DD-YYYY') %>
+    <% } %>
+    </small>
   </p>
 
   <div class="post-content">

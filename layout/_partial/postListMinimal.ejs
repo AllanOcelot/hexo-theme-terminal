@@ -2,7 +2,13 @@
   <ul class="postList minimal">
     <% page.posts.each(function(post){ %>
       <li>
-        <small class="post-date"><%= date(post.date, 'DD-MM-YYYY') %></small>
+        <small class="post-date">
+          <% if (theme.dateFormat === 'EU') { %>
+            <%= date(post.date, 'DD-MM-YYYY') %>
+          <% } else { %>
+            <%= date(post.date, 'YY-DD-YYYY') %>
+          <% } %>
+        </small>
         <a href="<%- url_for(post.path) %>"><%= post.title || 'Untitled' %></a>
       </li>
     <% }) %>

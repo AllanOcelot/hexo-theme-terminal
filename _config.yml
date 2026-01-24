@@ -6,6 +6,8 @@
 # - Allan
 # ─────────────────────────────────────────────
 
+# Date Format - Either EU or USA
+dateFormat: 'EU'
 
 # If enabled, the 'fake crt' effect will be applied
 terminal_crt_enabled: true
