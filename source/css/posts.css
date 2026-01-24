@@ -1,14 +1,18 @@
 @import "./utils/variables.css";
 
 article.post {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+article.post {
   .post-content {
     max-width: 100%;
     margin-inline: auto;
-    line-height: 1.7;
     overflow-wrap: anywhere;
     color: var(--brand-primary-75);
 
-    h1,h2, h3, h4 {
+    h1,h2,h3,h4 {
       line-height: 1.25;
       margin-top: 1.6em;
       margin-bottom: 0.6em;
@@ -18,7 +22,8 @@ article.post {
     h3 { font-size: 1.3rem; }
 
     p {
-      margin: 0 0 2em 0;
+      margin: 0 0 25px 0;
+      line-height: 30px;
     }
 
     a {
@@ -39,23 +44,21 @@ article.post {
 
     ul,
     ol {
-      padding-left: 1.4em;
+      line-height: 30px;
+      padding-left: 40px;
+      margin-bottom: 25px;
     }
 
-    li + li {
-      margin-top: 0.35em;
+    li {
+      margin-bottom: 10px;
     }
   }
-}
-
-.post-content > * + * {
-  margin-top: 1em;
 }
 
 /* Nested lists spacing */
 li > ul,
 li > ol {
-  margin-top: 0.5em;
+  margin-bottom: 6px;
 }
 
 blockquote {
