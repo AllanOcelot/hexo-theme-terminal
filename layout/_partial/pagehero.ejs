@@ -1,7 +1,11 @@
 <div class="pagehero">
-  <h1>Welcome To Blog Title</h1>
-  <p>Sit down, relax and enjoy</p>
-  <a href="" title="Go somewhere" class="button">
-    Go somewhere
-  </a>
+  <h1><%= theme.home_options?.heroTitle %></h1>
+  <p><%= theme.home_options?.heroSubTitle %></p>
+  <% if(theme.home_options?.heroButton?.showButton === true) { %>
+    <a href="<%= theme.home_options?.heroButton?.buttonLink %>"
+       title="<%= theme.home_options?.heroButton?.buttonTitle %>"
+       class="button">
+      <%= theme.home_options?.heroButton?.buttonTitle %>
+    </a>
+  <% } %>
 </div>
