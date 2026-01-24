@@ -27,7 +27,7 @@
     }
     a {
       text-decoration: none;
-      color: var(--brand-green);
+      color: var(--brand-primary-75);
     }
 
     .cursor {
@@ -37,7 +37,7 @@
       top: 23px;
       width: 12px;
       height: 32px;
-      background: var(--brand-green);
+      background: var(--brand-primary-75);
       animation: cursor-blink 1.4s steps(1, end) infinite;
     }
   }
