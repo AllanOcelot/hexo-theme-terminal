@@ -1,0 +1,10 @@
+.postslist{
+  &.full {
+    
+  }
+  &.minimal {
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}

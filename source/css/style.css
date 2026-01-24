@@ -1,6 +1,7 @@
 @import "./utils/variables.css";
 @import "./layout/partials/header.css";
 @import "./layout/partials/pagehero.css";
+@import "./layout/partials/postsminimal.css";
 @import "./layout/partials/footer.css";
 @import "./posts.css";
 
@@ -17,7 +18,7 @@ body {
   flex-direction: column;
   background: var(--page-bg);
   position: relative;
-  padding: 80px 40px 20px 40px;
+  padding: 80px 40px 60px 40px;
   min-height: calc(100vh - 20px);
   color: var(--brand-primary-75);
   font-family: "IBM Plex Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;

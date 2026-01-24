@@ -3,14 +3,25 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  padding: 20px;
+  border-top: 1px solid var(--brand-primary-25);
+  color: var(--brand-primary-25);
+
   .wrapper {
     display: flex;
     flex-direction: row;
     padding: 0 40px;
     flex: 1 auto;
     align-items: center;
+    p {
+      cursor: default;
+    }
     .left {
       margin: auto auto auto 0;
+      p.copy {
+        margin: auto;
+        font-size: 14px;
+      }
     }
     .right {
       margin: auto 0 auto auto;
