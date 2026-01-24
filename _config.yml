@@ -13,9 +13,6 @@ terminal_crt_enabled: true
 # Show blinking terminal cursor after blog title in header
 terminal_cursor: true
 
-# Options: 'green' | 'blue' | 'red' | 'grey' | 'amber'
-terminal_color: 'green'
-
 # Terminal Images simply applies a filter to image, this can be undesirable to blogs that are photo heavy.
 # You can override specific images by using an img tag and the class 'no-filter'
 terminal_images:

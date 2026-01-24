@@ -5,32 +5,11 @@
   --text-highlight: #fff;
   
   /* Primary color configs */
-  --brand-primary-green: #57f57ae6;
-  --brand-primary-green-75: #57f579c7;
-  --brand-primary-green-50: #57f57986;
-  --brand-primary-green-25: #57f5794d;
-
-  --brand-primary-red: #e92e2ef5;
-  --brand-primary-red-75: #e92e2ecb;
-  --brand-primary-red-50: #e92e2e9c;
-  --brand-primary-red-25: #e92e2e59;
-
-  --brand-primary-blue: #0523cce6;
-  --brand-primary-blue-75: #0523ccb7;
-  --brand-primary-blue-50: #0523cc80;
-  --brand-primary-blue-25: #0523cc42;
-
-  --brand-primary-grey:  #ccccccf1;
-  --brand-primary-grey-75: #ccccccbe;
-  --brand-primary-grey-50: #cccccc88;
-  --brand-primary-grey-25: #cccccc31;  
-
-  --brand-primary-amber:  #f19e3ef1;
-  --brand-primary-amber-75: #f19d3ec4;
-  --brand-primary-amber-50: #f19d3e8f;
-  --brand-primary-amber-25: #f19d3e56;  
-
+  --brand-primary: #57f57ae6;
+  --brand-primary-75: #57f579c7;
+  --brand-primary-50: #57f57986;
+  --brand-primary-25: #57f5794d;
 
   /* RGB Values for specific theme use */
-  --rgb-brand-primary-green: rgba(87, 245, 122);
+  --rgb-brand-green: rgba(87, 245, 122);
 }

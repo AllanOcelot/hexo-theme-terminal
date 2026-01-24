@@ -3,7 +3,6 @@
 @import "./layout/partials/pagehero.css";
 @import "./layout/partials/footer.css";
 @import "./posts.css";
-@import "./utils/themes.css";
 
 * {
   box-sizing: border-box;
@@ -20,7 +19,7 @@ body {
   position: relative;
   padding: 80px 40px 20px 40px;
   min-height: calc(100vh - 20px);
-  color: var(--brand-primary-green-75);
+  color: var(--brand-primary-75);
   font-family: "IBM Plex Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   h1,h2,h3,h4,h5 {
@@ -126,5 +125,3 @@ body.crt::after {
   0%, 100% { filter: brightness(1) contrast(1); }
   50%      { filter: brightness(1.04) contrast(1.06); }
 }
-
-
