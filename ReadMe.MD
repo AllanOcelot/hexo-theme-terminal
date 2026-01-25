@@ -1,7 +1,20 @@
+
+![Home](screenshots/home.png)
+
 # Terminal
-WIP - learning hexo themeing as I go along.
+Terminal is a minimal, retro sci-fi inspired theme for the Static Site Generator Hexo.
 
-# What is it? 
-Terminal is a simple out of the Hexo theme used to Style a hexo site and make it look like a retro terminal / CRT style display. Think something along the lines of cheesy 'sci fi takes place on a hackers PC circa 1970s' kind of thing.
+The aim of the theme is to cater to anyone who want a simple - yet readable blog, with a quirky / cheesy theme.
 
-I'll update this once the theme has more teeth!
+I started this as a personal project to learn more about Hexo, just for fun.
+A lazy weekend project whilst I spin some records in the background.
+
+However, I enjoyed building this theme and wanted to contribute something back to the Hexo community, seeing as I use it for my own static blog generation.
+
+# TOD:
+  - Implement more custmisation features 
+  - Add more templates for other layouts ( work history / timeline / about / projects etc )
+  - Blog pages should have forward/back or "Read Similar"
+  - Posts should use tags 
+  - Archive template should function as a search post by X page
+  - Add support for featured images on blog posts
