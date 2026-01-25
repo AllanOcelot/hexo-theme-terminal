@@ -4,9 +4,9 @@
       <li>
         <small class="post-date">
           <% if (theme.dateFormat === 'EU') { %>
-            <%= date(post.date, 'DD-MM-YYYY') %>
+            <%= date(post.date, 'DD/MM/YYYY') %>
           <% } else { %>
-            <%= date(post.date, 'YY-DD-YYYY') %>
+            <%= date(post.date, 'YY/DD/YYYY') %>
           <% } %>
         </small>
         <a href="<%- url_for(post.path) %>"><%= post.title || 'Untitled' %></a>

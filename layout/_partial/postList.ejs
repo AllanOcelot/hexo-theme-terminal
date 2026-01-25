@@ -1,0 +1,21 @@
+<div class="posts">
+  <div class="postList full">
+    <% page.posts.each(function(post){ %>
+      <div class="post">
+        <div class="featured-image"></div>
+        <div class="content">
+          <small class="post-date">
+            Date Posted:
+            <% if (theme.dateFormat === 'EU') { %>
+              <%= date(post.date, 'DD/MM/YYYY') %>
+            <% } else { %>
+              <%= date(post.date, 'YY/DD/YYYY') %>
+            <% } %>
+          </small>
+          <a href="<%- url_for(post.path) %>" title="<%- url_for(post.path) %>"><%= post.title || 'Untitled' %></a>
+        </div>
+        <a href="<%- url_for(post.path) %>" title="<%- url_for(post.path) %>" class="button">Read Post</a>
+      </div>
+    <% }) %>
+  </div>
+</div>
