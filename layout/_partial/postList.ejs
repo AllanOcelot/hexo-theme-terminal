@@ -12,7 +12,7 @@
               <%= date(post.date, 'YY/DD/YYYY') %>
             <% } %>
           </small>
-          <a href="<%- url_for(post.path) %>" title="<%- url_for(post.path) %>"><%= post.title || 'Untitled' %></a>
+          <a href="<%- url_for(post.path) %>" class="title" title="<%- url_for(post.path) %>"><%= post.title || 'Untitled' %></a>
         </div>
         <a href="<%- url_for(post.path) %>" title="<%- url_for(post.path) %>" class="button">Read Post</a>
       </div>

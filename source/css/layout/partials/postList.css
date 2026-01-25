@@ -4,9 +4,17 @@
     padding-left: 0;
     &.full {
       display: grid;
-      grid-template-columns: auto auto auto;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       column-gap: 40px;
       row-gap: 40px;
+
+      @media screen and (max-width: 1200px){
+        grid-template-columns: repeat(2, minmax(0,1fr));
+      }
+
+      @media screen and (max-width: 1024px){
+        grid-template-columns: repeat(1, minmax(0,1fr));
+      }
 
       .featured-image {
         display: block;
@@ -24,6 +32,12 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
+        .post-date {
+          margin-bottom: 10px;
+        }
+        .title {
+          font-size: 24px;
+        }
       }
 
     }
