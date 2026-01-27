@@ -27,9 +27,16 @@
         background-repeat: no-repeat;
         background-position: center center;
         filter: grayscale(0) contrast(.8) brightness(.5);
+        transition: all .3s;
+        transition-delay: filter .3s, opacity .4s;
         &.no-filter {
           filter: none;
-        }        
+        }
+        &:hover {
+          filter: none;
+          opacity: 1;
+          transition: all .4s;
+        }
       }
 
       .content {
