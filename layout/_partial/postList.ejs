@@ -2,7 +2,14 @@
   <div class="postList full">
     <% page.posts.each(function(post){ %>
       <div class="post">
-        <div class="featured-image"></div>
+        <% if(theme.featured_image?.enabled === true){
+          const featuredImage =
+              post.featured_image
+              ? post.featured_image
+              : theme.featured_image?.default;
+        %>
+          <div class="featured-image" style="background-image: url('<%= featuredImage %>');"></div>
+        <% } %>
         <div class="content">
           <small class="post-date">
             Date Posted:

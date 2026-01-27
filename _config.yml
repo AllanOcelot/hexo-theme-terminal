@@ -21,6 +21,11 @@ terminal_images:
   enabled: true
 
 
+# Featured images
+featured_image:
+  enabled: true
+  default:  /images/default.jpg
+
 # ─────────────────────────────────────────────
 # HOME PAGE OPTIONS
 # ─────────────────────────────────────────────
