@@ -16,41 +16,62 @@
         grid-template-columns: repeat(1, minmax(0,1fr));
       }
 
-      .featured-image {
-        display: block;
-        width: 100%;
-        height: 224px;
-        margin-bottom: 10px;
-        border: 1px solid var(--brand-primary-75);
-        position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        filter: grayscale(0) contrast(.8) brightness(.5);
-        transition: all .3s;
-        transition-delay: filter .3s, opacity .4s;
-        &.no-filter {
-          filter: none;
-        }
-        &:hover {
-          filter: none;
-          opacity: 1;
-          transition: all .4s;
-        }
-      }
-
-      .content {
+      .post {
         display: flex;
         flex-direction: column;
-        margin-bottom: 20px;
-        .post-date {
-          margin-bottom: 10px;
-        }
-        .title {
-          font-size: 24px;
-        }
-      }
 
+        .featured-image {
+          display: block;
+          width: 100%;
+          height: 224px;
+          margin-bottom: 10px;
+          border: 1px solid var(--brand-primary-75);
+          position: relative;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+          filter: grayscale(0) contrast(.8) brightness(.5);
+          opacity: .85;
+          transition: all .3s;
+          transition-delay: filter .3s, opacity .4s;
+          &.no-filter {
+            filter: none;
+          }
+        }
+
+        .content {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+          min-height: 120px;
+          .post-date {
+            margin-bottom: 10px;
+          }
+          .title {
+            font-size: 20px;
+            line-height: 30px;
+            text-underline-offset: 3px;
+            text-decoration: none;
+          }
+        }
+        .button {
+          width: auto;
+          margin-right: 0;
+          margin-left: auto;
+        }
+
+        &:hover {
+          .featured-image {
+            filter: none;
+            opacity: 1;
+            transition: all .4s;
+          }
+          .content .title {
+            text-decoration: underline;
+          }
+        }
+
+      }
     }
     &.minimal {
       li {
