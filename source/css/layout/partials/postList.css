@@ -34,6 +34,7 @@
           opacity: .85;
           transition: all .3s;
           transition-delay: filter .3s, opacity .4s;
+          overflow: hidden;
           &.no-filter {
             filter: none;
           }
@@ -52,6 +53,8 @@
             line-height: 30px;
             text-underline-offset: 3px;
             text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 2px;
           }
         }
         .button {
