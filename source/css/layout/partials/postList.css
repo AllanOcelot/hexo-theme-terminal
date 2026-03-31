@@ -45,9 +45,14 @@
           flex-direction: column;
           margin-bottom: 20px;
           min-height: 120px;
+          @media screen and (max-width: 700px){
+            min-height: 0;
+          }
+
           .post-date {
             margin-bottom: 10px;
           }
+
           .title {
             font-size: 20px;
             line-height: 30px;
@@ -61,6 +66,10 @@
           width: auto;
           margin-right: 0;
           margin-left: auto;
+          @media screen and (max-width: 700px){
+            width: 100%;
+            text-align: center;
+          }
         }
 
         &:hover {

@@ -45,6 +45,27 @@
   nav {
     margin: auto 0 auto auto;
   }
+
+  @media screen and (max-width: 700px){
+    .wrapper {
+      flex-direction: column;
+      padding-top: 10px;
+    }
+    .logo {
+      a {
+        opacity: 1 !important;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .cursor  {
+        display: none !important;
+      }
+    }
+    .site-nav {
+      margin: 5px auto;
+    }
+  }
 }
 
 /* Animation */

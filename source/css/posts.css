@@ -3,9 +3,6 @@
 article.post {
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-article.post {
   .post-content {
     max-width: 100%;
     margin-inline: auto;
@@ -55,6 +52,23 @@ article.post {
 
     li {
       margin-bottom: 10px;
+    }
+  }
+
+  /* Small screens: reduce padding a bit */
+  @media (max-width: 600px) {
+    .post-content {
+      max-width: 100%;
+      pre {
+        padding: 0.8em;
+      }
+
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.4rem; }
+      h3 { font-size: 1rem; }
+
+      p { font-size: .8rem; }
+
     }
   }
 }
@@ -117,15 +131,5 @@ table {
   filter: grayscale(.5) contrast(1) brightness(.4);
   &.no-filter {
     filter: none;
-  }
-}
-
-/* Small screens: reduce padding a bit */
-@media (max-width: 600px) {
-  .post-content {
-    max-width: 100%;
-  }
-  .post-content pre {
-    padding: 0.8em;
   }
 }

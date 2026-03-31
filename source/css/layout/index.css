@@ -1,3 +1,6 @@
 .home-content-container  {
   padding: 100px 0;
+  @media screen and (max-width: 700px){
+    padding: 50px 0;
+  }
 }

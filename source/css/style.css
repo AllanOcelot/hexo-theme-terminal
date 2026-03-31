@@ -55,9 +55,6 @@ body {
   }
 }
 
-
-
-
 body.crt::after {
   content: "";
   position: fixed;
@@ -127,4 +124,12 @@ body.crt::after {
 @keyframes crt-brightness {
   0%, 100% { filter: brightness(1) contrast(1); }
   50%      { filter: brightness(1.04) contrast(1.06); }
+}
+
+
+@media screen and (max-width: 700px){
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
