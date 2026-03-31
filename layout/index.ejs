@@ -8,6 +8,6 @@
   </div>
 <% } %>
 
-<% if (theme.home_options?.showHomeFull === true) { %>
-  <%- partial('_partial/postList') %>
+<% if (theme.home_options?.showHomeFull === false) { %>
+  <%- partial('_partial/postListMinimal') %>
 <% } %>
