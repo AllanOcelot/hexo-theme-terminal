@@ -19,6 +19,7 @@
       .post {
         display: flex;
         flex-direction: column;
+        margin-bottom: 25px;
 
         .featured-image {
           display: block;
@@ -30,8 +31,7 @@
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center center;
-          filter: grayscale(0) contrast(.8) brightness(.5);
-          opacity: .85;
+          opacity: .7;
           transition: all .3s;
           transition-delay: filter .3s, opacity .4s;
           overflow: hidden;

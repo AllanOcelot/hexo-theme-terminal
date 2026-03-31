@@ -3,6 +3,7 @@
 @import "./layout/partials/pagehero.css";
 @import "./layout/partials/postList.css";
 @import "./layout/partials/footer.css";
+@import "./layout/index.css";
 @import "./posts.css";
 
 * {
