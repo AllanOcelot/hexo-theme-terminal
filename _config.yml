@@ -37,3 +37,4 @@ home_options:
     showButton: true
     buttonTitle: 'Read More'
     buttonLink: '/about'
+  showHomeFull: true

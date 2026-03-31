@@ -2,6 +2,12 @@
   <%- partial('_partial/pagehero') %>
 <% } %>
 
-<div class="home-content-container">
+<% if (theme.home_options?.showHomeFull === true) { %>
+  <div class="home-content-container">
+    <%- partial('_partial/postList') %>
+  </div>
+<% } %>
+
+<% if (theme.home_options?.showHomeFull === true) { %>
   <%- partial('_partial/postList') %>
-</div>
+<% } %>
