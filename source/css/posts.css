@@ -3,6 +3,10 @@
 article.post {
   padding-top: 50px;
   padding-bottom: 50px;
+  max-width: 1024px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
   .post-content {
     max-width: 100%;
     margin-inline: auto;
