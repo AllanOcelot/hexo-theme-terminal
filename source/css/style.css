@@ -5,6 +5,7 @@
 @import "./layout/partials/footer.css";
 @import "./layout/index.css";
 @import "./layout/archives.css";
+@import "./layout/tags.css";
 @import "./posts.css";
 
 * {

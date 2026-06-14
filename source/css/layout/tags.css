@@ -1,0 +1,51 @@
+.tag {
+  display: inline-block;
+  font-size: 0.75em;
+  padding: 2px 8px;
+  border: 1px solid var(--brand-primary-50);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.tag:hover {
+  opacity: 1;
+}
+
+/* Tags on post pages */
+.post-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  vertical-align: middle;
+}
+
+/* Tags in the minimal post list */
+.post-tags-inline {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+/* Tags index page */
+.tags-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.tag-count {
+  opacity: 0.6;
+}
+
+/* Tag archive page */
+.tag-post-count {
+  opacity: 0.5;
+  font-size: 0.85em;
+  margin-top: 0;
+  margin-bottom: 20px;
+}

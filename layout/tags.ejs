@@ -1,0 +1,13 @@
+<div class="archives tags-index">
+  <h2>Tags</h2>
+  <ul class="tags-list">
+    <% site.tags.sort('name').each(function(tag){ %>
+      <li>
+        <a href="<%- url_for(tag.path) %>" class="tag">
+          #<%= tag.name %>
+          <span class="tag-count">(<%= tag.posts.length %>)</span>
+        </a>
+      </li>
+    <% }) %>
+  </ul>
+</div>

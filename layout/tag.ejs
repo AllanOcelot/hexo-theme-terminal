@@ -1,0 +1,5 @@
+<div class="archives tag-archive">
+  <h2>#<%= page.tag %></h2>
+  <p class="tag-post-count"><%= page.posts.length %> post<%= page.posts.length !== 1 ? 's' : '' %></p>
+  <%- partial('_partial/postListMinimal') %>
+</div>

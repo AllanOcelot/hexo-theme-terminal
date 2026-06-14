@@ -20,6 +20,13 @@
             <% } %>
           </small>
           <a href="<%- url_for(post.path) %>" class="title" title="<%- url_for(post.path) %>"><%= post.title || 'Untitled' %></a>
+          <% if (post.tags && post.tags.length) { %>
+            <div class="post-tags">
+              <% post.tags.each(function(tag){ %>
+                <a href="<%- url_for(tag.path) %>" class="tag">#<%= tag.name %></a>
+              <% }) %>
+            </div>
+          <% } %>
         </div>
         <a href="<%- url_for(post.path) %>" title="<%- url_for(post.path) %>" class="button">Read Post</a>
       </div>

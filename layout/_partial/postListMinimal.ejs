@@ -10,6 +10,13 @@
           <% } %>
         </small>
         <a href="<%- url_for(post.path) %>"><%= post.title || 'Untitled' %></a>
+        <% if (post.tags && post.tags.length) { %>
+          <span class="post-tags-inline">
+            <% post.tags.each(function(tag){ %>
+              <a href="<%- url_for(tag.path) %>" class="tag">#<%= tag.name %></a>
+            <% }) %>
+          </span>
+        <% } %>
       </li>
     <% }) %>
   </ul>
